@@ -1,20 +1,44 @@
-import React from 'react'
+import React from "react";
 
 const Contact = () => {
   return (
-    <div className='max-w-[1240px] m-auto p-4 h-screen'>
-        <h1 className='text-2xl font-bold text-center p-4'>Let's work together</h1>
-        <form className='max-w-[600px] m-auto'>
-            <div className='grid grid-cols-2 gap-2'>
-                <input className='border shadow-lg p-3' type="text" placeholder='Name' />
-                <input className='border shadow-lg p-3' type="email" placeholder='Email' />
-            </div>
-            <input className='border shadow-lg p-3 w-full my-2' type="text" placeholder='Subject' />
-            <textarea className='border shadow-lg p-3 w-full' cols="30" rows="10" placeholder='Message'></textarea>
-            <button className='border shadow-lg p-3 w-full mt-2'>Submit</button>
+    <>
+      <div className="max-w-[1240px] m-auto p-4 h-screen">
+        <h1 className="text-2xl font-bold text-center p-4">
+          Let&apos;s work together
+        </h1>
+        <form className="max-w-[600px] m-auto">
+          <div className="grid grid-cols-2 gap-2">
+            <input
+              className="border shadow-lg p-3"
+              type="text"
+              placeholder="Name"
+            />
+            <input
+              className="border shadow-lg p-3"
+              type="email"
+              placeholder="Email"
+            />
+          </div>
+          <input
+            className="border shadow-lg p-3 w-full my-2"
+            type="text"
+            placeholder="Subject"
+          />
+          <textarea
+            className="border shadow-lg p-3 w-full"
+            cols="30"
+            rows="10"
+            placeholder="Message"
+          ></textarea>
+          <button className="border shadow-lg p-3 w-full mt-2">Submit</button>
         </form>
-    </div>
-  )
-}
+        <div className="h-fit bg-slate-700 my-32">
+          <h2 className="text-center py-16 h-40">SOMETHING CAN BE THERE</h2>
+        </div>
+      </div>
+    </>
+  );
+};
 
-export default Contact
+export default Contact;
